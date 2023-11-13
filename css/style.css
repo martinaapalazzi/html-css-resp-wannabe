@@ -139,12 +139,22 @@ img {
     }
 }
 
-@media screen and (max-width: 320px) {
-    .container {
-        width: 100%;
-        margin: 0px;
-        padding: 0px;
+@media screen and (max-width: 576px) {
+    .row {
         display: flex;
         flex-wrap: wrap;
+    }
+    .row > .col {
+        width: 100%;
+        margin-bottom: 20px;
+    }
+    .why-us {
+        background-color: black;
+        margin-bottom: 0px;
+        padding: 20px
+    }
+    .steps {
+        margin: 0px;
+
     }
 }
