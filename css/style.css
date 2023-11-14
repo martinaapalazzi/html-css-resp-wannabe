@@ -131,30 +131,37 @@ img {
 @media screen and (max-width: 768px) {
     .container {
         width: 100%;
-        margin: 0px;
-        padding: 0px;
     }
     .text-center {
         text-align: center;
     }
 }
 
-@media screen and (max-width: 576px) {
+@media screen and (max-width: 480px) {
     .row {
-        display: flex;
         flex-wrap: wrap;
     }
     .row > .col {
         width: 100%;
-        margin-bottom: 20px;
     }
     .why-us {
         background-color: black;
         margin-bottom: 0px;
-        padding: 20px
+        padding: 3em
     }
     .steps {
         margin: 0px;
-
+    }
+    .col:not(:last-child) {
+        margin-bottom: 3em;
     }
 }
+
+/************************************************
+    BONUS
+ ************************************************/
+
+@media screen and (min-width: 768px) {
+    .container {
+        width: 100%;
+    }
